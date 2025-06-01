@@ -22,3 +22,9 @@ React promites a component-based architecture, which makes it easy to create sel
 In imperative programming, developers explicitly write step-by-step instuctions for the computer to follow. This involves detailing exactly how a task should be accomplished, often involving direct manipulation of the DOM.  
 React takes a declarative approach. Instead of specifying how tasks should be performed, developers declare what the UI should look like based on the current state of the application. React abstracts away the direct manipulation of the DOM by introducing a virtual representation of it.
 > Declarative nature makes it easier to understand, maintain, and scale applications.
+
+## React folder structure
+- **node-modules**: Contains all the dependencies for the project;
+- **public**: This folder contains the HTML file and assets like images, logos, and static files.
+- **src**: This is where the main app components and logic are written.
+> We can create this folder structure using a terminal code `npx create-react-app app-name` inside the current folder.
