@@ -1,7 +1,9 @@
 import { useCart } from "../../context/cart-context";
+import {useNavigate} from "react-router-dom";
 
-export const Products = ({ product }) => {
+export const ProductCard = ({ product }) => {
   const { cartDispatch } = useCart();
+  const navigate = useNavigate();
 
   const onAddToCartClick = () => {
     cartDispatch({
@@ -17,9 +19,13 @@ export const Products = ({ product }) => {
     });
   };
 
+  const onTitleClick = () => {
+    navigate(`/productdetails/${product._id}`)
+  };
+
   return (
     <div className="flex flex-col border">
-      <div>
+      <div onClick={onTitleClick}>
         <p>{product.name}</p>
       </div>
       <div className="flex gap-8px">
