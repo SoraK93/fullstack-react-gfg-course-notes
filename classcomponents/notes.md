@@ -1,0 +1,2 @@
+# Class Components
+Class components are the traditional way of defining React components. But, with the introduction of Hooks, function components have vecome equibalent to class components in terms of functionality. In comparison to functional components, class components are more intricate due to their ability to maintian state. 
